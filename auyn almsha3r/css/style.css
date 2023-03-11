@@ -1,0 +1,140 @@
+html,
+body {
+    
+    font-family: 'Cairo', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+    background-color: #ffffff;
+}
+
+
+.interest-points {
+    background-color: #fafdfb;
+    border-radius: 3px;
+    height: 95%;
+    line-height: 35px;
+    padding: 50px 10px 0px 10px;
+    text-align: right;
+    width: 340px;
+}
+
+.interest-points li:hover {
+    background-color: #00a33181;
+}
+
+.burger-icon {
+    padding: 18px 0 0 160px;
+    cursor: default;
+}
+
+
+#map-title {
+    color: #00792e;
+    font-weight:normal;
+    font-size: 1.6em;
+    padding-left: 180px;
+}
+
+#map-header {
+    background-color: #ffffff;
+    color: #5b42e4;
+    position: absolute;
+    height: 50px;
+    top: 0;
+}
+
+#map {
+    top: 50px;
+    bottom: 0px;
+    height: 95%;
+    left: 362px;
+    position: absolute;
+    right: 0px;
+}
+
+.locationLink {
+    text-decoration:  none;
+    font-size: 1.10em;
+    color: #00792e;
+    padding: 0;
+}
+
+.listings {
+    padding: 0;
+}
+
+.read {
+    text-decoration:  none;
+    color: #0033cc;
+    font-weight: bold;
+}
+
+
+#search-listings-area-text {
+    width: 70%;
+    font-size: 1em;
+}
+
+#search-listings-area {
+    width: 27%;
+    font-size: 1em;
+    background-color: #808080;
+    border: 0;
+    padding: 3px 9px;
+    color: white;
+    background-image: url("../img/ic_search_white_18dp_1x.png"); /* 16px x 16px */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+}
+
+#search-icon {
+    float: right;
+}
+
+/*-------------------------------------- Media Queries ------------------------------*/
+/* from mobile phone to tablet size screen adjust the positions of the location list, map header and map */
+/* if browser window is smaller than 768, show and hide drop down location list is done with javascript */
+@media screen and (max-width: 768px) {
+    #map-header {
+        left: 0;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .interest-points {
+        position: absolute;
+        z-index: 2;
+        top: 50px;
+        width: 280px;
+        padding-top: 10px;
+    }
+
+    .burger-icon {
+        padding-right: 95px;
+        cursor: pointer;
+    }
+
+    .listings {
+        overflow: auto;
+    }
+
+    #map {
+        left: 0;
+        position: absolute;
+        z-index: 10;
+        height: 100%;
+    }
+
+    .locationLink {
+        font-size: 1em;
+    }
+
+    #search-listings-area-text {
+        width: 95%;
+    }
+}
