@@ -1,0 +1,54 @@
+*{
+font-family: 'Cairo', sans-serif;
+}
+body {
+    line-height: 1.6;
+    margin: 2em;
+    background-image: url('http://ajaspace.sa/assets/images/hands-digital-universe-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center; 
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+margin-left: auto;
+height: 100%;
+}
+
+#st1{
+  background-color: #cdcdcd69 ;  
+}
+
+th {
+    background-color:#4f689a;
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+td {
+    border-top: 1px solid #eee;
+    padding: 0.5em 1em;
+}
+
+input {
+    cursor: pointer;
+}
+
+/* Column types */
+th.missed-col {
+    background-color:#616161;
+}
+
+td.missed-col {
+    background-color:#cdcdcd;
+    color:#fefefe;
+    text-align: center;
+}
+
+.name-col {
+    text-align: right;
+}
